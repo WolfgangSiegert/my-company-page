@@ -5,14 +5,19 @@
 h1 {
   font-size: 4rem;
 }
+h3 {
+  text-transform: uppercase;
+}
 a {
   font-weight: bold;
   color: black;
   text-decoration: none;
 }
-p img {
+img {
   height: 100%;
   width: auto;
+  display: block;
+  /* margin: auto auto; */
 }
 
 header {
@@ -37,7 +42,7 @@ nav ul li {
   list-style-type: none;
 }
 .hero-section {
-  margin: 3git pushrem 0rem;
+  margin: 3rem 0rem;
 }
 #id-contact-button {
   /* position: absolute; */
@@ -105,4 +110,55 @@ nav ul li {
 .hero-scale-upper-element p {
   width: 60%;
   margin: auto;
+}
+
+.hero-team-container-element h1 {
+  text-align: center;
+}
+.hero-team-container-element {
+  width: 80%;
+  margin: auto;
+}
+.team-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.team-cards-container p {
+  width: 20%;
+  height: 20rem;
+  margin: 1rem 1rem;
+  padding: 1rem 1rem;
+  border: 3px solid black;
+  border-radius: 3px;
+}
+.hero-section-hero-contact {
+  width: 80%;
+  margin: auto;
+}
+.hero-contact-container-element {
+  display: flex;
+}
+.hero-section-hero-contact h1 {
+  padding: 1rem 1rem;
+  margin: 0px 0px;
+}
+.hero-contact-container-element > div {
+  flex: 1;
+}
+p > img {
+  /* max-height: auto; */
+  max-width: 50%;
+  display: block;
+  margin: auto auto;
+}
+.hero-contact-container-element > .upper-elemt-text {
+  flex: 5;
+}
+.hero-contact-container-element > .upper-elemt-img {
+  flex: 3;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
