@@ -169,6 +169,17 @@ p {
   width: 60%;
   margin: auto;
 }
+.contact-faq-container > h4 {
+  background-color: lightgrey;
+  padding: 0.5em 0.5em;
+  border-radius: 4px;
+}
+.contact-faq-container > h4:hover {
+  cursor: pointer;
+}
+.contact-faq-container > p {
+  padding: 0.5em 0.5em;
+}
 
 .hero-team-container-element h1 {
   text-align: center;
@@ -194,13 +205,14 @@ p {
 .hero-section-hero-contact {
   width: 80%;
   margin: auto;
+  margin-bottom: 2em;
 }
 .hero-contact-container-element {
   display: flex;
   flex-wrap: wrap;
 }
 .hero-section-hero-contact h1 {
-  padding: 1rem 1rem;
+  padding: 1rem 0;
   margin: 0px 0px;
 }
 .hero-contact-container-element > div {
@@ -325,6 +337,7 @@ form > input[type="button"] {
 }
 .li-checked {
   color: #ff9b21;
+  font-size: x-large;
 }
 .li-unchecked {
   color: black;
@@ -348,9 +361,17 @@ form > input[type="button"] {
   opacity: 0.7;
   background-color: orange;
 } */
+.faq-answer {
+  transition: display 6s;
+}
 .display-none {
   display: none;
+  transition: display 2s;
 }
 .visibile-hidden {
   visibility: hidden;
+}
+
+#team-img-3 {
+  scale: 1.3;
 }
