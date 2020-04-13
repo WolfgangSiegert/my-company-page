@@ -98,3 +98,28 @@ function closeAllFAQs() {
   }
 } */
 //---
+
+//#TODO mous-over and mous out event for toogling visibility on teamcards text to switch between image and description text
+setTeamcardListeners();
+
+function setTeamcardListeners() {
+  let teamCardPlaceholders = document.getElementsByClassName(
+    "team-card-switch-placeholder"
+  );
+  for (const e of teamCardPlaceholders) {
+    e.addEventListener("mouseover", function () {
+      e.nextElementSibling.style.visibility = "visible";
+    });
+    e.addEventListener("mouseout", function () {
+      e.nextElementSibling.style.visibility = "hidden";
+    });
+  }
+}
+
+// document.getElementById("tc3").addEventListener("mouseover", function () {
+//   document.getElementById("tc3").nextElementSibling.style.visibility =
+//     "visible";
+// });
+// document.getElementById("tc3").addEventListener("mouseout", function () {
+//   document.getElementById("tc3").nextElementSibling.style.visibility = "hidden";
+// });
